@@ -1,0 +1,41 @@
+.jumbotron {
+    margin:20px, 0, 20px, 0;
+    background-image: url("../images/unionstation.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    color: rgb(169, 215, 221);
+    text-shadow: black 0.3em 0.3em 0.3em;
+    font-weight: 300;
+    text-align: center;
+    padding: 50px, 0, 50px, 0;
+    }
+@media (min-width: 960px) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+}
+
+.container {
+    background-color: rgb(234, 241, 243);
+}
+
+.wrapper {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.list {
+    color: black;
+}
+
+.foot {
+    border: solid rgb(143, 138, 138);
+    background-color: rgb(48, 93, 119);
+    text-align: center;
+    color: white;
+
+}
