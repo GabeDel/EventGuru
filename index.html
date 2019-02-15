@@ -1,38 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Link Ref to CSS -->
+    <link rel="stylesheet" href="assets/index.css">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Event Weather Planner</title>
 
-    <link rel="stylesheet" href="assets/index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+     <script src="https://cdn.datedropper.com/get/vud9gbq0iayob1546cdt2rpit9nappho"></script>
+
+     
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!--  -->
-    
+    <title>Event Guru</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Event Guru</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,100 +42,137 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">content</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">content</a>
+              </li> -->
             </ul>
           </div>
         </nav>
-    <header>
-  <div class="collapse bg-dark" id="navbarHeader">
+        <main role="main">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Search for events in the Denver area!</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-</header>
-
-<main role="main">
-
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Event / Weather Planner</h1>
-      <p class="lead text-muted">About the event / weather planner</p>
-      <p> 
-          <form>
-              <div class="form-group">
-                <!-- <label for="exampleInputEmail1">Event Search</label> -->
-                <input type="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Events in your area">
-                <!-- <small id="emailHelp" class="form-text text-muted">Search for an event</small> -->
-              </div>
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+        <section class=" jumbotron text-center">
+          
+          <h1 class="jumbotron-heading"><i class="fas fa-sun"></i> </i>Event Guru</h1>
+          <!-- <p class="col-lg-12 lead text-muted">About the event / weather planner</p> -->
         
-      </p>
+            <select class="form-control" id="myDropdown">
+                <option>Albuquerque, NM</option>
+                <option>Atlanta, GA</option>
+                <option>Austin, TX</option>
+                <option>Baltimore, MD</option>
+                <option>Boise, ID</option>
+                <option>Buffalo, NY</option>
+                <option>Charlotte, NC</option>
+                <option>Chicago, IL</option>
+                <option>Cleveland, OH</option>
+                <option>Dallas, TX</option>
+                <option>Denver, CO</option>
+                <option>Detroit, MI</option>
+                <option>Honolulu, HI</option>
+                <option>Indianapolis, IN</option>
+                <option>Kansas City, MO</option>
+                <option>Las Vegas, NV</option>
+                <option>Los Angeles, CA</option>
+                <option>Memphis, TN</option>
+                <option>Milwaukee, WI</option>
+                <option>Minneapolis, MN</option>
+                <option>Nashville, TN</option>
+                <option>New York City, NY</option>
+                <option>Oklahoma City, OK</option>
+                <option>Orlando, FL</option>
+                <option>Philadelphia, PA</option>
+                <option>Pittsburgh, PA</option>
+                <option>Portland, OR</option>
+                <option>Raleigh, NC</option>
+                <option>Richmond, VA</option>
+                <option>Sacramento, CA</option>
+                <option>Salt Lake City, UT</option>
+                <option>San Antonio, TX</option>
+                <option>San Diego, CA</option>
+                <option>San Francisco, CA</option>
+                <option>Seattle, WA</option>
+                <option>St. Louis, MO</option>
+                <option>Tampa, FL</option>
+                <option>Washington, DC</option>
+            </select>       
+            <input id="date-input" type="date" data-dd-theme="leaf">   
+        
+      </div>  
+    </section>
     </div>
-  </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+          
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg>
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card mb-4 shadow-sm">
+
+              <table id="event_results">
+                <thead>
+                  <tr>
+                    <!-- Table content -->
+                    <th scope="col">Date</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Venue</th>
+                      <th scope="col">Buy Ticket</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
             <div class="card-body">
-              <p class="card-text">content</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">content</p>
-             
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect fill="#55595c" width="100%" height="100%"/><text fill="#eceeef" dy=".3em" x="50%" y="50%">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">content</p>
               
+            <div class="card" style="width: 18rem; font-size: 18px; font-weight:bold ">
+                <div class="card-body">
+             <div id="showWeatherForcast"></div>
+             <div id="icon"><img id="wicon"></div>
+             
+             </div>
+             </div>
             </div>
           </div>
         </div>
-
-       
-
-</main>
-
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
+      </main>
+      <!-- Footer -->
+      <!-- <div class="card-body text-center">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div> -->
+    <div class="foot">
+        <p>Copy Right@</p>
+       <P>
+          <i class="fab fa-facebook-square"></i>
+          <!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
+          <i class="fab fa-twitter"></i>
+        <!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        Made with <i class="fas fa-heart"></i> from team John Cena
+      </P>
+      </div>
+ 
+      
     
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script></body>
+<!-- Day Dropper  -->
+<script src="https://cdn.datedropper.com/get/vud9gbq0iayob1546cdt2rpit9nappho"></script>
+<!-- moment.js  -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+ <!-- Link Ref to JS -->
+ <script src="assets/javascript/script.js"></script>
+</body>
+
 </html>
