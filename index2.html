@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="dist/css/window-date-picker.css" rel="stylesheet">
+    <script src="dist/js/window-date-picker.js"></script>
+
+    <title>Window Date Picker</title>
+</head>
+<body>
+<script src="dist/js/window-date-picker.js">
+    <div id="picker"></div>
+    <input id="demo">
+    <button id="toggle">Lanuch</button>
+    const picker = new WindowDatePicker({
+        
+        el: '#picker',
+
+        toggleEl: '#toggle',
+
+        inputEl: '#demo'
+        
+        });
+        const picker = new WindowDatePicker({
+
+// initial value
+value: null,
+
+// selectors
+el: null,
+inputEl: null,
+toggleEl: null,
+
+// or 'HOUR', 'DATEHOUR'
+type: "DATE",
+
+// date format
+dateType: "DD/MM/YYYY",
+
+// or '24'
+hourType: "12",
+
+// allows empty value
+allowEmpty: true,
+
+// shows the button
+showButtons: false,
+
+// toggles the date & time picker when clicking input
+inputToggle: false,
+
+// language
+lang: 'en'
+
+});
+export default {
+    DAYS_ABBR: ['', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    MONTHS: ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    MONTHS_ABBR: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    AM_PM: ['AM', 'PM'],
+    BUTTONS: ['CANCEL', 'OK'],
+    INVALID_DATE: 'Invalid Date'
+};
+// gets the current value
+picker.get();
+
+// sets the value
+picker.set(value);
+
+// opens the picker
+picker.open();
+
+// closes the picker
+picker.close(); 
+
+// toggles the picker
+picker.toggle();
+
+// store the selection
+picker.save();
+
+// cancels the selection
+picker.cancel();
+
+// destroys the picker
+picker.destroy();
+picker.el.addEventListener('wdp.open', () => {
+  // when the picker opens
+});
+
+picker.el.addEventListener('wdp.close', () => {
+  // when the picker closes
+});
+
+picker.el.addEventListener('wdp.save', () => {
+  // when the picker saves the selection
+});
+
+picker.el.addEventListener('wdp.cancel', () => {
+  // when the picker cancels the selection
+});
+
+picker.el.addEventListener('wdp.destroy', () => {
+  // when the picker destroys
+});
+
+picker.el.addEventListener('wdp.change', () => {
+  // when the value changed
+});
+
+</script>
+        
+
+
+</body>
+</html>

@@ -9,9 +9,15 @@
 
     <link rel="stylesheet" href="assets/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <!-- Compiled and minified CSS -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <!-- Compiled and minified JavaScript -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+             
+    <!-- <link href="assets/datepicker.min.css" rel="stylesheet" type="text/css"> -->
+    
+  
 
 
     <style>
@@ -83,9 +89,14 @@
       <p> 
           <form>
               <div class="form-group">
-                <!-- <label for="exampleInputEmail1">Event Search</label> -->
+                <!-- date picker -->
+                <label for="exampleInputEmail1">Event Search</label>
                 <input type="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Events in your area">
-                <!-- <small id="emailHelp" class="form-text text-muted">Search for an event</small> -->
+                <!-- date picker -->
+                <small id="emailHelp" class="form-text text-muted">Search for an event</small>
+                <input type='text' class='datepicker-here' data-language='en'/>
+                <input type="text" class="form-control datepicker" value="">
+
               </div>
               <button type="submit" class="btn btn-primary">Search</button>
             </form>
@@ -96,7 +107,8 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
-
+      <!-- date picker -->
+      <input type="text" class="datepicker">
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
@@ -135,6 +147,22 @@
       <a href="#">Back to top</a>
     
 </footer>
+
+<!-- Include English language -->
+<script src="dist/js/i18n/datepicker.en.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script></body>
+      <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script></body>
+      <script src="assets/datepicker.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('.datepicker').datepicker()
+  });
+      </script>
+      <!-- Include English language -->
+      <script src="dist/js/i18n/datepicker.en.js"></script>
+</body>
 </html>
